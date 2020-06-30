@@ -1,0 +1,100 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 09:14:45  October 17, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		datapath_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY datapath
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:14:45  OCTOBER 17, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE Adder_GALARZA_MONCADA_ORTIZ/adder.vhd
+set_global_assignment -name VHDL_FILE RegAyB_GALARZA_MONCADA_ORTIZ/reg.vhd
+set_global_assignment -name VHDL_FILE StateMachine_GALARZA_MONCADA_ORTIZ/stateMach.vhd
+set_global_assignment -name VHDL_FILE SignExt_GALARZA_MONCADA_ORTIZ/signExt.vhd
+set_global_assignment -name VHDL_FILE shiftSingE_GALARZA_MONCADA_ORTIZ/shiftLeftSE.vhd
+set_global_assignment -name VHDL_FILE shiftIR_GALARZA_MONCADA_ORTIZ/shiftLeftIR.vhd
+set_global_assignment -name VHDL_FILE PC_GALARZA_MONCADA_ORTIZ/pc.vhd
+set_global_assignment -name VHDL_FILE Mdr_GALARZA_MONCADA_ORTIZ/mdr.vhd
+set_global_assignment -name VHDL_FILE InstMem_GALARZA_MONCADA_ORTIZ/instrucMem.vhd
+set_global_assignment -name VHDL_FILE RegisterFile_GALARZA_MONCADA_ORTIZ/registerFile.vhd
+set_global_assignment -name VHDL_FILE Mux4ALU_GALARZA_MONCADA_ORTIZ/mux4ALU.vhd
+set_global_assignment -name VHDL_FILE Mux3ALU_GALARZA_MONCADA_ORTIZ/mux3ALU.vhd
+set_global_assignment -name VHDL_FILE Mux2ALU_GALARZA_MONCADA_ORTIZ/mux2ALU.vhd
+set_global_assignment -name VHDL_FILE IRegister_GALARZA_MONCADA_ORTIZ/instRegister.vhd
+set_global_assignment -name VHDL_FILE ALUout_GALARZA_MONCADA_ORTIZ/aluOUT.vhd
+set_global_assignment -name VHDL_FILE ALUcontrol_GALARZA_MONCADA_ORTIZ/alucontrol.vhd
+set_global_assignment -name VHDL_FILE ALU_GALARZA_MONCADA_ORTIZ/alu.vhd
+set_global_assignment -name VHDL_FILE datapath.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name VHDL_FILE Divider/Vhdl1.vhd
+set_global_assignment -name VHDL_FILE Inputs/Inputs.vhd
+set_location_assignment PIN_L1 -to Clk
+set_location_assignment PIN_T21 -to Button1
+set_location_assignment PIN_T22 -to Button2
+set_location_assignment PIN_R21 -to Button3
+set_location_assignment PIN_R22 -to Button4
+set_global_assignment -name VHDL_FILE Decodificador/Deco.vhd
+set_location_assignment PIN_F4 -to min1[6]
+set_location_assignment PIN_D5 -to min1[5]
+set_location_assignment PIN_D6 -to min1[4]
+set_location_assignment PIN_J4 -to min1[3]
+set_location_assignment PIN_L8 -to min1[2]
+set_location_assignment PIN_F3 -to min1[1]
+set_location_assignment PIN_D4 -to min1[0]
+set_location_assignment PIN_G5 -to min2[6]
+set_location_assignment PIN_G6 -to min2[5]
+set_location_assignment PIN_C2 -to min2[4]
+set_location_assignment PIN_C1 -to min2[3]
+set_location_assignment PIN_E3 -to min2[2]
+set_location_assignment PIN_E4 -to min2[1]
+set_location_assignment PIN_D3 -to min2[0]
+set_location_assignment PIN_U22 -to led
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
